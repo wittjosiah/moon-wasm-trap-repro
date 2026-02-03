@@ -1,0 +1,8 @@
+tasks:
+  build:
+    command: 'pnpm exec tsc --build'
+    inputs:
+      - 'src/**/*'
+      - 'tsconfig.json'
+    outputs:
+      - 'dist'

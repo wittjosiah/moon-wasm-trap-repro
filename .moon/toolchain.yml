@@ -1,0 +1,10 @@
+# https://moonrepo.dev/docs/config/toolchain#node
+node:
+  # This setting causes a wasm trap when running `moon run :build`
+  # Remove or comment out to fix the issue
+  packageManager: pnpm
+
+  version: 22.11.0
+
+typescript:
+  rootOptionsConfigFileName: 'tsconfig.base.json'
