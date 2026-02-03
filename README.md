@@ -52,6 +52,6 @@ packages/
 
 ## Environment
 
-- Moon: 2.0.0-rc.1
+- Moon: 2.0.0-rc.0
 - Node: 22.11.0
 - pnpm: 10.0.0
