@@ -8,17 +8,27 @@ When `.moon/toolchain.yml` has `packageManager: pnpm` configured in a monorepo w
 
 ## Steps to Reproduce
 
-1. Install dependencies:
+1. Install proto if not already installed:
+   ```bash
+   curl -fsSL https://moonrepo.dev/install/proto.sh | bash
+   ```
+
+2. Install tools:
+   ```bash
+   proto use
+   ```
+
+3. Install dependencies:
    ```bash
    pnpm install
    ```
 
-2. Run the build:
+4. Run the build:
    ```bash
    moon run :build
    ```
 
-3. Observe the wasm trap error.
+5. Observe the wasm trap error.
 
 ## Workaround
 
@@ -42,6 +52,6 @@ packages/
 
 ## Environment
 
-- Moon: latest
-- Node: 22.x
-- pnpm: 10.x
+- Moon: 2.0.0-rc.1
+- Node: 22.11.0
+- pnpm: 10.0.0
